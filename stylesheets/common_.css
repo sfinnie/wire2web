@@ -1,0 +1,368 @@
+
+html {
+    height: 100%;
+}
+body {
+    font-family: arial;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, legend {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+h2, legend {
+    font-size: 1em;
+    font-style: normal;
+}
+form {
+    padding: 0 10px;
+}
+input {
+    font-family: "Lucida Console";
+    margin: 0 10px;
+}
+.small-text {
+    background: url("../images/textfield-small.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0 10px 10px 0;
+    padding: 3px;
+    width: 75px;
+}
+.medium-text {
+    background: url("../images/textfield-med.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 20px;
+    margin: 0 10px 10px 0;
+    padding: 3px;
+    width: 150px;
+}
+.large-text {
+    background: url("../images/textfield-large.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 20px;
+    margin: 0 10px 10px 0;
+    padding: 3px;
+    width: 250px;
+}
+#box {
+    background: url("../images/vertical-line.gif") repeat-y scroll 0 0 transparent;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    width: 560px;
+}
+#box-top {
+    background: url("../images/box-top.gif") no-repeat scroll 0 0 transparent;
+    height: 55px;
+    left: -13px;
+    position: absolute;
+    top: -30px;
+    width: 610px;
+}
+#box-middle {
+    height: 100%;
+    margin: 50px 0;
+    position: relative;
+    width: 560px;
+}
+#box-bottom {
+    background: url("../images/box-bottom.gif") no-repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 60px;
+    left: -20px;
+    margin-left: -40px;
+    width: 650px;
+}
+.clear {
+    clear: both;
+}
+.clear-left {
+    clear: left;
+}
+#back {
+    float: left;
+}
+#next {
+    float: right;
+}
+.button {
+    background: url("../images/button-bg.gif") no-repeat scroll 0 4px transparent;
+    border: medium none;
+    cursor: pointer;
+    font-family: arial;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 106px;
+}
+.button:hover {
+    background: url("../images/button-bg2.gif") no-repeat scroll 0 4px transparent;
+}
+#wrapper {
+    height: 100%;
+}
+#left, #middle, #right {
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+#left {
+    background: none repeat scroll 0 0 #ECECEC;
+    border-right: 1px dashed #333333;
+}
+#middle {
+    background: url("../images/tile.gif") repeat scroll 0 0 transparent;
+}
+#right {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-left: 1px dashed #333333;
+}
+form {
+    height: 100%;
+}
+.container {
+    height: 90%;
+    padding: 0 20px;
+}
+#middle {
+    width: 59%;
+}
+
+textarea {
+    border: 1px solid #ECECEC;
+    height: 80%;
+    width: 90%;
+	resize: none
+}
+
+#middle textarea{
+	height: 150px;
+    width: 100%;
+	border: 1px solid #333;
+	margin-bottom:15px;
+}
+
+div.radiogroup > span > input[type="radio"], div.radiogroup > span > input[type="checkbox"] {
+    left: -1100000px;
+    position: absolute;
+}
+div.radiogroup {
+    margin-bottom: 5px;
+}
+div.radiogroup > span {
+    float: left;
+    text-align: left;
+}
+div.radiogroup > span > input[type="radio"] + label, div.radiogroup > span > input[type="checkbox"] + label {
+    background: url("../images/off.png") no-repeat scroll left center transparent;
+    clear: none;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    padding: 5px 0 4px 24px;
+}
+div.radiogroup > span > input[type="radio"]:checked + label {
+    background-image: url("../images/radio.png");
+}
+div.radiogroup > span > input[type="checkbox"]:checked + label {
+    background-image: url("../images/check.png");
+}
+#attach {
+    margin-top: -10px;
+}
+
+/** SF Changes */
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+.float-right {
+    float: right;
+    margin-left: 10px;
+}
+
+label {
+    clear: both;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 90px;
+}
+
+/* Was this:
+label span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 90px;
+}
+
+label {
+    clear: both;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+*/
+
+
+/** Original */
+
+/* body {
+    font-family: arial;
+    font-size: 14px;
+}
+h1, h2, legend {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+h2, legend {
+    font-size: 1em;
+    font-style: normal;
+}
+form {
+    padding: 0 10px;
+}
+
+label{margin-bottom:5px;}
+
+input {
+    font-family: "Lucida Console";
+    margin: 0 10px;
+    float-left;
+    clear;
+
+}
+.small-text {
+    background: url("../images/textfield-small.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0 0 10px;
+    padding: 3px;
+    width: 75px;
+	 height: 20px;
+}
+.medium-text {
+    background: url("../images/textfield-med.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0 0 10px;
+    padding: 3px;
+    width: 150px;
+	 height: 20px;
+}
+.large-text {
+    background: url("../images/textfield-large.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0 0 10px;
+    padding: 3px;
+    width: 250px;
+	 height: 20px;
+}
+#back {
+    float: left;
+}
+#next {
+    float: right;
+}
+#box {
+    background: url("../images/vertical-line.gif") repeat-y scroll 0 0 transparent;
+    padding: 20px;
+    position: relative;
+    width: 560px;
+}
+#box-top {
+    background: url("../images/box-top.gif") no-repeat scroll 0 0 transparent;
+    height: 55px;
+    left: -13px;
+    position: absolute;
+    top: -30px;
+    width: 610px;
+}
+#box-middle {
+    margin: 25px 0 100px;
+    position: relative;
+    width: 560px;
+}
+#box-bottom {
+    background: url("../images/box-bottom.gif") no-repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 60px;
+    left: -20px;
+    position: absolute;
+    width: 650px;
+}
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+.float-right {
+    float: right;
+    margin-left: 10px;
+}
+.clear {
+    clear: both;
+}
+.clear-left {
+    clear: left;
+}
+.button {
+    background: url("../images/button-bg.gif") no-repeat scroll 0 4px transparent;
+    border: medium none;
+    cursor: pointer;
+    font-family: arial;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 106px;
+}
+.button:hover {
+    background: url("../images/button-bg2.gif") no-repeat scroll 0 4px transparent;
+}
+
+
+textarea{
+	width:100%;
+	height:150px;
+	margin-bottom:5px;
+}
+
+select{
+	
+}
+
+
+div.radiogroup > span > input[type="radio"], div.radiogroup > span > input[type="checkbox"] {
+    left: -1100000px;
+    position: absolute;
+}
+
+div.radiogroup{
+	margin-bottom:5px;
+}
+
+div.radiogroup > span {
+    float: left;
+    text-align: left;
+}
+div.radiogroup > span > input[type="radio"] + label, div.radiogroup > span > input[type="checkbox"] + label {
+    background: url("../images/off.png") no-repeat scroll left center transparent;
+    clear: none;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    padding: 5px 0 4px 24px;
+}
+div.radiogroup > span > input[type="radio"]:checked + label {
+    background-image: url("../images/radio.png");
+}
+div.radiogroup > span > input[type="checkbox"]:checked + label {
+    background-image: url("../images/check.png");
+}
+
+
+#attach{margin-top:-10px;} */
