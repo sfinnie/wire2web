@@ -41,6 +41,28 @@ So getting to production application can be as simple as changing the stylesheet
 
 The reality is likely in the middle.  Wireframes probably won't cover all routes through the app, or perhaps won't include all validation logic/domain concepts.  However these can be added to the underlying webdsl model rather than starting from scratch.
 
+#Status
+Wire2Web is rudimentary at this point.  Nevertheless it's usable in its current form, though there's lot more that could be done.  Contributions greatfully accepted.
+
+#Instructions for use
+Download, Install & Build the starter project:
+
+1. Download & Install [Webdsl](http://webdsl.org/singlepage/Download)
+2. Clone the wire2web project: `git clone https://github.com/sfinnie/wire2web.git`
+3. Run Webdsl
+4. Import the Wire2web project into Webdsl: `File->Import->Existing Project into Workspace` and select the project as downloaded in step 2.
+5. Select the Wire2web project in the project explorer and build it: `Ctrl-alt-b` on Linux/Windows, `Cmd-alt-b` on Mac.  This will build then launch the app and open a web browser onto the default page.
+
+
+#Make your wireframes
+ - The Domain model and pages are defined in `wire2web.app`.
+ - The wireframe template is in `templates/wftemplate.app`
+ - Stylesheets are in `stylesheets` (no surprises there then).
+ - Rebuild with `ctrl-alt-b` / `cmd-alt-b` as above.
+
+The [webdsl manual](http://webdsl.org/indexpage/Manual) documents how to add pages & domain model content.
+
+
 
 
 
