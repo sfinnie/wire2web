@@ -60,7 +60,7 @@ define page findCustomer(){
 		//one based on fields populated.
 		
 		var organisation: String := "Organisation"
-		var postcode: String := "G1 4WW"
+		var postcode: String := ""
 		var gender: String
 		var genderOpts: Set<Gender> := {Gender{name :="male"}, Gender{name := "female"}}
 		
